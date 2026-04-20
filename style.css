@@ -1,0 +1,95 @@
+main{
+    display: flex; /* Используем Flexbox для выравнивания */
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif; /* Шрифт */
+    flex-direction: column; /* Элементы друг под другом */
+    align-items: center; /* Центрирование по горизонтали */
+}
+
+.blockWho{
+    padding: 25px; /* Отступы вокруг текста хода */
+}
+#spanWho{
+    color: rgb(116, 246, 116); /* Цвет текста текущего хода */
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.blockArea{
+    display: flex; /* Сетка через Flexbox */
+    width: 500px;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: aliceblue; /* Фон поля */
+    border-radius: 24px; /* Скругление углов поля */
+    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.295); /* Тень */
+}
+
+.blockItem{
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    position: relative;
+    display: flex;
+    padding: 8px;
+    background: gray; /* Цвет ячейки */
+    width: 140px; /* Ширина ячейки */
+    border-radius: 24px;
+    height: 140px; /* Высота ячейки */
+    margin: 5px; /* Отступы между ячейками */
+    justify-content: center; /* Центрирование символа X/O по горизонтали */
+}
+.blockItem:hover{
+    background: rgb(174, 174, 174); /* Цвет ячейки при наведении */
+}
+
+.krest{
+    color: rgb(135, 220, 250); /* Цвет крестика */
+    font-size: 38px;
+    align-items: center; /* Центрирование по вертикали */
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    color: rgb(148, 255, 124); /* Цвет нолика */
+    font-size: 38px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.winColor{
+    color: rgb(21, 168, 21); /* Цвет текста победной линии */
+    background: gold; /* Фон победной линии */
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.blockWinner{
+    margin-top: 24px;
+    display: none; /* Скрыто по умолчанию! Показывается только при победе */
+    flex-direction: column;
+}
+
+.textWin{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+#spanWin{
+    font-size: 24px;
+    color: rgb(0, 21, 255);
+}
+.btnNewGame{
+    padding: 12px;
+    background: rgb(55, 196, 55);
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.btnNewGame:hover{
+    background: rgb(82, 229, 82);
+}
