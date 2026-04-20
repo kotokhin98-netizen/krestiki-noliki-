@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Кодировка страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность для мобильных -->
+    <title>Крестики-нулики</title> <!-- Заголовок вкладки -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключение стилей -->
+</head>
+<body>
+    
+    <main> <!-- Основной контейнер -->
+
+        <div class="blockWho"> <!-- Блок отображения текущего хода -->
+            <div class="Text"> Ход: <span id="spanWho"></span></div> <!-- Сюда JS напишет "Крестики" или "Нулики" -->
+        </div>
+
+        <div class="blockArea" id="blockArea"> <!-- Игровое поле 3x3 -->
+            <!-- 9 ячеек поля -->
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+        </div>
+
+        <div class="blockWinner" id="blockWinner"> <!-- Блок победы (скрыт по умолчанию) -->
+            <div class="TextWin">Победитель: <span id="spanWin"></span></div> <!-- Имя победителя -->
+            <div class="btnNewGame" id="btnNewGame">Новая игра</div> <!-- Кнопка перезапуска -->
+        </div>
+
+    </main>
+    <script src="app.js"></script> <!-- Подключение логики игры -->
+</body>
+</html>
