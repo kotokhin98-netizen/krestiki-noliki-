@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Блок отображения хода -->
+    <div class="info-panel">
+        Ход: <span id="spanWho"></span>
+    </div>
+
+    <!-- Игровое поле -->
+    <main id="blockArea">
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+        <div class="blockItem"></div>
+    </main>
+
+    <!-- Блок победы (изначально скрыт) -->
+    <div class="blockWinner" id="blockWinner">
+        <h2>Победитель: <span id="spanWin"></span></h2>
+        <button id="btnNewGame">Новая игра</button>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
